@@ -1,0 +1,33 @@
+<p><%= link_to "Add a Todo", todos_new_path%></p>
+<h1>Cat</h1>
+<p>
+<% @cats.each do |t| %>
+
+	<% if t.name != "" %>
+		Name: <%= t.name %><br>
+	<%else%>
+		Name: NONE<br>
+	<%end%>
+
+<% end %>
+</p>
+<h1>Todo</h1>
+<p>
+<% @todos.each do |t| %>
+
+	Task: <%= t.tasks %><br>
+	Finished: <%= t.finished %><br>
+
+<% end %>
+</p>
+<h1>User</h1>
+<p>
+<% @users.each do |t| %>
+
+	Name: <%= t.username %><br>
+	Email: <%= t.email %><br>
+	Age: <%= t.age %><br>
+
+<% end %>
+</p>
+
